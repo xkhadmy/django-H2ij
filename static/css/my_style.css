@@ -2,10 +2,25 @@
     color: orange;
     font-size: 35px;
     letter-spacing: 2px;
-    text-align: center;
+    text-align: left;
+    /* Выравнивание текста по левому краю */
     font-weight: 900;
     transform: scaleY(1.2);
 }
+
+@media (max-width: 768px) {
+    .big_bc_orange {
+        font-size: 20px;
+        /* Уменьшение размера шрифта для мобильных */
+        letter-spacing: 1px;
+        /* Уменьшение расстояния между буквами */
+        transform: scaleY(1);
+        /* Убрать увеличение по оси Y */
+        text-align: left;
+        /* Обеспечиваем выравнивание по левому краю */
+    }
+}
+
 
 
 
@@ -81,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 60vh;
     /* Высота контейнера по умолчанию */
 }
 
