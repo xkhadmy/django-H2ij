@@ -237,6 +237,26 @@ textarea {
     }
 }
 
+@media (max-width: 768px) {
+    .unser-angebot-full {
+        display: none;
+    }
+
+    .unser-angebot-short {
+        display: inline;
+    }
+}
+
+@media (min-width: 769px) {
+    .unser-angebot-full {
+        display: inline;
+    }
+
+    .unser-angebot-short {
+        display: none;
+    }
+}
+
 
 .dropdown-menu {
     display: none;
