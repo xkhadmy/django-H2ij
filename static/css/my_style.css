@@ -228,6 +228,14 @@ textarea {
     }
 }
 
+@media (max-width: 768px) {
+    .btn-mobile-small {
+        font-size: 12px;
+        /* Уменьшенный размер шрифта для мобильных устройств */
+    }
+}
+
+
 /* Медиа-запрос для мобильных устройств с шириной экрана от 321px до 480px */
 @media screen and (max-width: 480px) {
     h4 {
