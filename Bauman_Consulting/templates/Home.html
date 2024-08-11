@@ -54,9 +54,13 @@
                         <a href=" " class="btn btn-outline-dark btn-no-border"><b>Home</b></a>
                         
                         <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
-                            <a class="btn btn-outline-dark btn-no-border dropdown-toggle" href=" " id="unserAngebotDropdown" role="button">
+
+                            <a class="btn btn-outline-dark btn-no-border dropdown-toggle" 
+                                href="{% url 'Bauman_Consulting:Unser_Angebot' %}"  
+                                id="unserAngebotDropdown" role="button">
                                 <b><span class="unser-angebot-full">Unser Angebot</span><span class="unser-angebot-short">Angebot</span></b>
                             </a>
+
                             <div class="dropdown-menu" aria-labelledby="unserAngebotDropdown" id="dropdownMenu">
                                 <a class="dropdown-item" href=" ">
                                     <span class="unser-angebot-full">Technisches Sicherheitskonzept</span><span class="unser-angebot-short">Tech. Sicherheit</span>
