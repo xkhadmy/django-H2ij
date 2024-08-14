@@ -21,7 +21,13 @@
     }
 }
 
-
+/* Устанавливаем контейнер как Flexbox и заставляем его занимать всю высоту */
+.container100 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* 100% высоты окна */
+}
 
 
 
