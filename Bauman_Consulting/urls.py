@@ -6,6 +6,7 @@ from .views import (
     page_Organisatorisches_Sicherheitskonzept,
     page_Technisches_Sicherheitskonzept,
     page_Literatur,
+    page_Bestellen,
 )
 
 app_name = 'Bauman_Consulting'
@@ -15,6 +16,7 @@ urlpatterns = [
     path("Unser_Angebot/", page_Unser_Angebot, name="Unser_Angebot"),
     path("Literatur/", page_Literatur, name="Literatur"),
     path("Kontakt/", page_Kontakt, name="Kontakt"),
+    path("Bestellen/", page_Bestellen, name="Bestellen"),
     path("Organisatorisches_Sicherheitskonzept/",
         page_Organisatorisches_Sicherheitskonzept,
         name="Organisatorisches_Sicherheitskonzept",
