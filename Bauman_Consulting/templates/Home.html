@@ -50,15 +50,20 @@
             <div class="col-6 d-flex justify-content-end collapse navbar-collapse p-0 m-0" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <div class="btn-group" role="group" aria-label="Large button group">
+              
                         <a href="{% url 'Bauman_Consulting:index' %}" 
                         class="btn btn-outline-dark btn-no-border {% if request.path == '/' %}active{% endif %} "><b>Home</b></a>
         
                         <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
                             <a class="btn btn-outline-dark btn-no-border dropdown-toggle 
-                            {% if request.path == '/Unser_Angebot/' %}active{% endif %}" 
+                            {% if request.path == '/Unser_Angebot/' %}active{% endif %}
+                            {% if request.path == '/Technisches_Sicherheitskonzept/' %}active{% endif %}
+                            {% if request.path == '/Organisatorisches_Sicherheitskonzept/' %}active{% endif %}" 
                             href="{% url 'Bauman_Consulting:Unser_Angebot' %}"  
-                            id="unserAngebotDropdown" role="button">
-                                <b><span class="unser-angebot-full">Unser Angebot</span><span 
+                            id="unserAngebotDropdown" 
+                            role="button">
+
+                            <b><span class="unser-angebot-full">Unser Angebot</span><span 
                                     class="unser-angebot-short">Angebot</span></b>
                             </a>
         
