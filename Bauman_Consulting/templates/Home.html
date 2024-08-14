@@ -82,9 +82,11 @@
                             </div>
                         </div>
         
-                        <a href=" " class="btn btn-outline-dark btn-no-border btn-mobile-small"><b>Literatur</b></a>
+                        <a href="{% url 'Bauman_Consulting:Literatur' %}" 
+                        class="btn btn-outline-dark btn-no-border btn-mobile-small {% if request.path == '/Literatur/' %}active{% endif %}"><b>Literatur</b></a>
         
-                        <a href="{% url 'Bauman_Consulting:Kontakt' %}" class="btn btn-outline-dark btn-no-border btn-mobile-small {% if request.path == '/Bauman_Consulting/Kontakt/' %}active{% endif %}"><b>Kontakt</b></a>
+                        <a href="{% url 'Bauman_Consulting:Kontakt' %}" 
+                        class="btn btn-outline-dark btn-no-border btn-mobile-small {% if request.path == '/Kontakt/' %}active{% endif %}"><b>Kontakt</b></a>
                     </div>
                 </ul>
             </div>
