@@ -39,45 +39,44 @@
   <body>
  
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 m-1 mr-1 header">
-        
             <div class="col-6">
                 {% include 'utils/Logo/logo.html' %}
             </div>
-            
+        
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="col-6 collapse navbar-collapse mr-4 p-0 m-0" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+        
+            <div class="col-6 d-flex justify-content-end collapse navbar-collapse p-0 m-0" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
                     <div class="btn-group" role="group" aria-label="Large button group">
                         <a href=" " class="btn btn-outline-dark btn-no-border"><b>Home</b></a>
-                        
+        
                         <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
-
                             <a class="btn btn-outline-dark btn-no-border dropdown-toggle" 
-                                href="{% url 'Bauman_Consulting:Unser_Angebot' %}"  
-                                id="unserAngebotDropdown" role="button">
+                            href="{% url 'Bauman_Consulting:Unser_Angebot' %}"  
+                            id="unserAngebotDropdown" role="button">
                                 <b><span class="unser-angebot-full">Unser Angebot</span><span class="unser-angebot-short">Angebot</span></b>
                             </a>
-
+        
                             <div class="dropdown-menu" aria-labelledby="unserAngebotDropdown" id="dropdownMenu">
                                 <a class="dropdown-item" href=" ">
                                     <span class="unser-angebot-full">Technisches Sicherheitskonzept</span><span class="unser-angebot-short">Tech. Sicherheit</span>
                                 </a>
                                 <a class="dropdown-item" href=" ">
                                     <span class="unser-angebot-full">Organisatorisches Sicherheitskonzept</span><span class="unser-angebot-short">Org. Sicherheit</span>
-                                    </a>
+                                </a>
                             </div>
                         </div>
-
+        
                         <a href=" " class="btn btn-outline-dark btn-no-border btn-mobile-small"><b>Literatur</b></a>
-
+        
                         <a href="{% url 'Bauman_Consulting:Kontakt' %}" class="btn btn-outline-dark btn-no-border btn-mobile-small {% if request.path == '/Bauman_Consulting/Kontakt/' %}active{% endif %}"><b>Kontakt</b></a>
                     </div>
                 </ul>
             </div>
         </nav>
+    
         
 
         <div class="content background_color">
