@@ -67,11 +67,16 @@
                                     class="unser-angebot-short">Angebot</span></b>
                             </a>
         
-                            <div class="dropdown-menu" aria-labelledby="unserAngebotDropdown" id="dropdownMenu">
-                                <a class="dropdown-item" href=" ">
+                            <div class="dropdown-menu" 
+                                 aria-labelledby="unserAngebotDropdown" 
+                                 id="dropdownMenu">
+                                 
+                                <a class="dropdown-item {% if request.path == '/Technisches_Sicherheitskonzept/' %}active{% endif %}" 
+                                    href="{% url 'Bauman_Consulting:Technisches_Sicherheitskonzept' %}">
                                     <span class="unser-angebot-full">Technisches Sicherheitskonzept</span><span class="unser-angebot-short">Tech. Sicherheit</span>
                                 </a>
-                                <a class="dropdown-item" href=" ">
+                                <a class="dropdown-item {% if request.path == '/Organisatorisches_Sicherheitskonzept/' %}active{% endif %} " 
+                                    href="{% url 'Bauman_Consulting:Organisatorisches_Sicherheitskonzept' %}">
                                     <span class="unser-angebot-full">Organisatorisches Sicherheitskonzept</span><span class="unser-angebot-short">Org. Sicherheit</span>
                                 </a>
                             </div>
