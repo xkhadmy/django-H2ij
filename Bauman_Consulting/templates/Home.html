@@ -55,9 +55,7 @@
         
                         <div class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
                             <a class="btn btn-outline-dark btn-no-border dropdown-toggle 
-                            {% if '/Bauman_Consulting/Unser_Angebot/' in request.path %}
-                                    active
-                            {% endif %}" 
+                            {% if request.path == '/Unser_Angebot/' %}active{% endif %}" 
                             href="{% url 'Bauman_Consulting:Unser_Angebot' %}"  
                             id="unserAngebotDropdown" role="button">
                                 <b><span class="unser-angebot-full">Unser Angebot</span><span 
