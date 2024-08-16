@@ -18,8 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Загрузка переменных среды из файла .env
  
-# Загрузка переменных среды из файла .env
-load_dotenv()
+ 
 
 # Вывод значений переменных среды для отладки
 print("EMAIL_HOST_USER:", os.getenv("EMAIL_HOST_USER"))
