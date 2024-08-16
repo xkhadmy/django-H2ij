@@ -18,7 +18,7 @@ urlpatterns = [
     path("Literatur/", page_Literatur, name="Literatur"),
     path("Kontakt/", page_Kontakt, name="Kontakt"),
     path("Bestellen/", page_Bestellen, name="Bestellen"),
-    path("contact_form/", contact_form_view, name="contact_form "),
+    path("contact/", contact_form_view, name="contact_form"),
     path("Organisatorisches_Sicherheitskonzept/",
         page_Organisatorisches_Sicherheitskonzept,
         name="Organisatorisches_Sicherheitskonzept",
