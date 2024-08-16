@@ -18,7 +18,7 @@
             </div>
             
             <div class="col-12 col-lg-7">
-                <form action="{% url 'Bauman_Consulting:contact_form' %}" method="POST" class="custom_form col-8">
+                <form action="{% url 'contact_form' %}" method="POST" class="custom_form col-8">
                     {% csrf_token %}
                     <label for="thema">Thema:</label>
                     <textarea id="thema" name="thema" rows="1" required></textarea>
