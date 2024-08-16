@@ -9,7 +9,7 @@ from .models import ContactForm
 
  
 
-import matplotlib.pyplot as plt
+ 
 import io
  
 from django.db.models import Count
