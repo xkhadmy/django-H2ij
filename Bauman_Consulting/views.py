@@ -57,7 +57,7 @@ def contact_form_view(request):
         if form.is_valid():
             # form.save()  # Закомментируйте эту строку, чтобы не сохранять данные в базу
 
-            # Отправка email
+            # Отправка email peter.baumann.sulz@bluewin.ch
             subject = "New contact form submission"
             message = f"""
             Thema: {form.cleaned_data['thema']}
@@ -69,7 +69,7 @@ def contact_form_view(request):
             Betreff: {form.cleaned_data['betreff']}
             Nachricht: {form.cleaned_data['nachricht']}
             """
-            recipient_list = ["peter.baumann.sulz@bluewin.ch"]
+            recipient_list = ["dimaadboos@gmail.com"]
 
             send_mail(subject, message, "sender@example.com", recipient_list)
 
