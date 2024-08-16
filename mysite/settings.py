@@ -27,8 +27,8 @@ load_dotenv()
  
 EMAIL_HOST = "smtp.gmail.com" 
 EMAIL_PORT = 587
-EMAIL_HOST_USER = config("EMAIL_HOST_USER")  # Ваш адрес Gmail
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")  # Пароль от вашего Gmail аккаунта
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")  # Ваш адрес Gmail
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")  # Пароль от вашего Gmail аккаунта
 EMAIL_USE_TLS = True
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
