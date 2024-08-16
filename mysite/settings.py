@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Загрузка переменных среды из файла .env
-load_dotenv(BASE_DIR / ".env")
+ 
 # Загрузка переменных среды из файла .env
 load_dotenv()
 
