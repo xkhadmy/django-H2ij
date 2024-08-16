@@ -19,7 +19,8 @@ from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Загрузка переменных среды из файла .env
+# Загрузка переменных из .env файла
+load_dotenv(BASE_DIR / '.env')
  
 # Загрузка переменных среды из файла .env
 load_dotenv()
