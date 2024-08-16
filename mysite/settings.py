@@ -28,14 +28,9 @@ print("EMAIL_HOST_PASSWORD:", os.getenv("EMAIL_HOST_PASSWORD"))
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")  # Ваш адрес Gmail
-EMAIL_HOST_PASSWORD = os.getenv(
-    "EMAIL_HOST_PASSWORD"
-)  # Пароль от вашего Gmail аккаунта
-
-
 EMAIL_USE_TLS = True
-
+EMAIL_HOST_USER = "cauto1919@gmail.com"  # Ваш адрес Gmail
+EMAIL_HOST_PASSWORD = "rlnkhsifemamcqzk"  # Пароль от вашего Gmail аккаунта
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 # SECURITY WARNING: keep the secret key used in production secret!
