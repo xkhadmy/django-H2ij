@@ -6,9 +6,6 @@ from django.conf import settings  # добавьте этот импорт
 from .forms import ContactFormForm, KaufenFormForm
 from django.core.mail import send_mail
  
-
- 
-
  
 import io
  
