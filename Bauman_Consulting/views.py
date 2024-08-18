@@ -113,7 +113,7 @@ def kaufen_form_view(request):
             send_mail(subject, message, "sender@example.com", recipient_list)
 
             print("Форма сохранена успешно")
-            return redirect("index")
+            return render(request, 'Home.html' )
         else:
             print("Форма недействительна", form.errors)
     else:

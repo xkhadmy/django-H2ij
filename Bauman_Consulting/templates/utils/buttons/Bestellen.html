@@ -34,7 +34,7 @@
             </div>
             <div class="col-12 col-lg-4">
                     <b>
-                         <form action=" " method="POST" class="  col-12">
+                         <form action="{% url 'Bauman_Consulting:kaufen_form' %}" method="POST" class="  col-12">
                             {% csrf_token %}
                             <div class="row">
                                 Rechnungsadresse
