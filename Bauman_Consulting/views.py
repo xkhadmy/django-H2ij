@@ -70,7 +70,7 @@ def contact_form_view(request):
 
             send_mail(subject, message, "sender@example.com", recipient_list)
 
-            return redirect("index")  
+            return render(request, 'Home.html' )  
     else:
         form = ContactFormForm()
     return render(request, "contact_form.html", {"form": form})
