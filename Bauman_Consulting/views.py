@@ -66,7 +66,7 @@ def contact_form_view(request):
             Betreff: {form.cleaned_data['betreff']}
             Nachricht: {form.cleaned_data['nachricht']}
             """
-            recipient_list = ["dimaadboos@gmail.com"]
+            recipient_list = ["peter.baumann.sulz@bluewin.ch"]
 
             send_mail(subject, message, "sender@example.com", recipient_list)
 
@@ -108,7 +108,7 @@ def kaufen_form_view(request):
             Ort: {form.cleaned_data['ort_l']}
             Nachricht: {form.cleaned_data['nachricht_l']}
             """
-            recipient_list = ["dimaadboos@gmail.com"]  # Замените на ваш email адрес
+            recipient_list = ["peter.baumann.sulz@bluewin.ch"]  # Замените на ваш email адрес
 
             send_mail(subject, message, "sender@example.com", recipient_list)
 
