@@ -36,30 +36,10 @@
                 <!-- Кнопка, которая будет открывать модальное окно -->
                 <a href="{% url 'Bauman_Consulting:Bestellen' %}"
                     class="btn btn-success {% if request.path == '/Bauman_Consulting/Bestellen/' %}active{% endif %}">Bestellen</a>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#authorModal">
+                    <b>Der Autor</b>
                 </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        ...
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-              
+                 
                 <!-- Модальное окно -->
                 <div class="modal fade" id="authorModal" tabindex="-1" role="dialog" aria-labelledby="authorModalLabel"
                     aria-hidden="true">
@@ -67,7 +47,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="authorModalLabel">Informationen zum Autor</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
@@ -114,7 +94,7 @@
 
                             </div>
                             <div class=" modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
                             </div>
                         </div>
                     </div>
