@@ -34,12 +34,12 @@
 
             <div class="col-12 col-lg-2 text-center">
                 <!-- Кнопка, которая будет открывать модальное окно -->
-                <a href=" "
+                <a href="{% url 'Bauman_Consulting:Bestellen' %}"
                     class="btn btn-success {% if request.path == '/Bauman_Consulting/Bestellen/' %}active{% endif %}">Bestellen</a>
                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#authorModal">
                     <b>Der Autor</b>
                 </button>
-
+              
                 <!-- Модальное окно -->
                 <div class="modal fade" id="authorModal" tabindex="-1" role="dialog" aria-labelledby="authorModalLabel"
                     aria-hidden="true">

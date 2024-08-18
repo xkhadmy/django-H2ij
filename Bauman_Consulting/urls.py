@@ -8,6 +8,7 @@ from .views import (
     page_Literatur,
     page_Bestellen,
     contact_form_view,
+    kaufen_form_view,
 )
 
 app_name = 'Bauman_Consulting'
@@ -19,6 +20,7 @@ urlpatterns = [
     path("Kontakt/", page_Kontakt, name="Kontakt"),
     path("Bestellen/", page_Bestellen, name="Bestellen"),
     path("contact/", contact_form_view, name="contact_form"),
+    path("kaufen/", kaufen_form_view, name="kaufen_form"),
     path("Organisatorisches_Sicherheitskonzept/",
         page_Organisatorisches_Sicherheitskonzept,
         name="Organisatorisches_Sicherheitskonzept",
