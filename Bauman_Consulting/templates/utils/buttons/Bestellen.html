@@ -56,7 +56,7 @@
                                     <input type="text" id="firma" name="firma" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="telephone">Telephone:</label>
+                                    <label for="telephone">Telefon:</label>
                                     <input type="text" id="telephone" name="telephone" required>
                                 </div>
                             </div>
@@ -80,6 +80,10 @@
                                 <div class="col-md-4">
                                     <label for="ort">Ort:</label>
                                     <input type="text" id="ort" name="ort" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="land">Land:</label>
+                                    <input type="text" id="land" name="land" required>
                                 </div>
                             </div>
                             <label for="nachricht">Bitte geben Sie die gewünschte Anzahl pro Band an:</label>
@@ -113,7 +117,7 @@
                                     <input type="text" id="firma_l" name="firma_l" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="telephone_l">Telephone:</label>
+                                    <label for="telephone_l">Telefon:</label>
                                     <input type="text" id="telephone_l" name="telephone_l" required>
                                 </div>
                             </div>
@@ -138,6 +142,10 @@
                                     <label for="ort_l">Ort:</label>
                                     <input type="text" id="ort_l" name="ort_l" required>
                                 </div>
+                                <div class="col-md-4">
+                                    <label for="land_l">Land:</label>
+                                    <input type="text" id="land_l" name="land_l" required>
+                                </div>
                             </div>
                             <label for="nachricht_l">Nachricht:</label>
                             <textarea id="nachricht_l" name="nachricht_l" rows="4" required></textarea>
@@ -161,7 +169,8 @@
         var strasse = document.getElementById('strasse').value;
         var hausnummer = document.getElementById('hausnummer').value;
         var plz = document.getElementById('plz').value;
-        var ort = document.getElementById('ort').value; 
+        var ort = document.getElementById('ort').value;
+        var land = document.getElementById('land').value; 
         var betreff = document.getElementById('betreff').value;
         var nachricht = document.getElementById('nachricht').value;
 
@@ -175,6 +184,7 @@
         document.getElementById('hausnummer_l').value = hausnummer;
         document.getElementById('plz_l').value = plz;
         document.getElementById('ort_l').value = ort;
+        document.getElementById('land_l').value = land;
         document.getElementById('betreff_l').value = betreff;
         document.getElementById('nachricht_l').value = nachricht;
     }

@@ -93,7 +93,8 @@ def kaufen_form_view(request):
             Strasse: {form.cleaned_data['strasse']}
             Hausnummer: {form.cleaned_data['hausnummer']} 
             PLZ: {form.cleaned_data['plz']}
-            Ort: {form.cleaned_data['ort']} 
+            Ort: {form.cleaned_data['ort']}
+            Land: {form.cleaned_data['land']} 
             Nachricht: {form.cleaned_data['nachricht']}
             ---------------Lieferadresse------------------
             Vorname: {form.cleaned_data['vorname_l']}
@@ -106,6 +107,7 @@ def kaufen_form_view(request):
             Hausnummer: {form.cleaned_data['hausnummer_l']} 
             PLZ: {form.cleaned_data['plz_l']}
             Ort: {form.cleaned_data['ort_l']}
+            Land: {form.cleaned_data['land_l']}
             Nachricht: {form.cleaned_data['nachricht_l']}
             """
             recipient_list = ["peter.baumann.sulz@bluewin.ch"]  # Замените на ваш email адрес
