@@ -24,6 +24,7 @@ class KaufenForm(models.Model):
     hausnummer = models.CharField(max_length=100, blank=True)
     plz = models.CharField(max_length=100, blank=True)
     ort = models.CharField(max_length=100, blank=True)
+    land = models.CharField(max_length=100, blank=True)
     nachricht = models.TextField(blank=True)
     vorname_l = models.CharField(max_length=100, blank=True)
     nachname_l = models.CharField(max_length=100, blank=True)
@@ -35,4 +36,5 @@ class KaufenForm(models.Model):
     hausnummer_l = models.CharField(max_length=100, blank=True)
     plz_l = models.CharField(max_length=100, blank=True)
     ort_l = models.CharField(max_length=100, blank=True)
+    land_l = models.CharField(max_length=100, blank=True)
     nachricht_l = models.TextField(blank=True)
